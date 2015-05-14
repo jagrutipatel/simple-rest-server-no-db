@@ -2,21 +2,23 @@
 <html>
     <head>
         <title> </title> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
 	<body> 		
-		<form action="/users" method="POST">
+		<form>
 			First name:<br>
 			<input type="text" name="firstname"><br>			
 			Last name:<br>
 			<input type="text" name="lastname"><br><br>
 			<input type="radio" name="sex" value="male" checked>Male<br>
 			<input type="radio" name="sex" value="female">Female<br><br>
-			<input type="submit" value="Submit">
-			
-</form>
+			<button>Submit</button>
+		</form>
+	<div id="info">
+	</div>
 		
-				
-						  
+	<script src="javascripts/form1_ajaxget.js"></script>
+			 			  
 		
 	</body>
 </html>
