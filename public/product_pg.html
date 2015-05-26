@@ -9,12 +9,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-		<style> 
-		@media screen and (max-width:760px){
-		.form-control{width:auto; float:left;}
-		}
-		
-		</style>
+		<link rel="stylesheet" href="stylesheets\prodpg.css" type="text/css">
     </head>
 	<body>
 	<script src="javascripts/prodpg.js"></script>
@@ -44,29 +39,31 @@
 						<a href="#" class="list-group-item">Fifth item</a>
 					</div>
 				</div>	
-			<form class="form-inline" role="form">
+			<form class="form-inline" role="form" action="/products" method="post">
 			<div class="form-group">
 				<label for="Search">Search</label>
 					<input type="search" class="form-control" id="search" placeholder="Search by item name">
 			<div class="col-sm-9 col-md-10">
 				<label for="Add Item" style="margin-left: -12px;">Add Item</label>
-					<input type="text" class="form-control" id="additem" placeholder="Item Name" style="margin-top:10px;">
+					<input type="text" class="add form-control" id="additem" placeholder="Item Name">
 				<label class="sr-only" for="Description">description</label>
-					<input type="text" class="form-control" id="Description" placeholder="Description" style="margin-top:10px;">
+					<input type="text" class="add form-control" id="Description" placeholder="Description">
 				<label class="sr-only" for="Price">Price</label>
-					<input type="price" class="form-control" id="price" placeholder="Price" style="margin-top:10px;">
-				<button type="submit" class="btn btn-default" style="margin-top:10px;">Add</button>
+					<input type="price" class="add form-control" id="price" placeholder="Price">
+				<button type="submit" class="addbtn btn btn-default">Add</button>
 			</div>
 			</div>
 			</form>
-				<div class="col-sm-9 col-md-10">
-					<div class="well well-lg" style="margin-top:10px;">
-						<h2><strong>Soccerball</strong></h2>
-						<p><strong>FIFA approved size and weight</strong></p>
-						<button class="btn btn-primary pull-right" type="button" style="margin-top: -70px; margin-right: 90px;">$19.95</button>
-						<span class="glyphicon glyphicon-remove-sign pull-right" style="width: 14px; margin-right: 0px; height: 14px;margin-top: -60px;"></span>	
+			<div class="newitem col-sm-9 col-md-10">
+			</div>
+				<!--
+					<div class="newbox well well-lg">
+						<span class="sign glyphicon glyphicon-remove-sign pull-right"></span>
+						<button class="pricebtn btn btn-primary pull-right" type="button"></button>
+						<h2><strong></strong></h2>
+						<p><strong></strong></p>						
 					</div>
-				</div>
+				-->
 				
 			</div>
 		</div>
