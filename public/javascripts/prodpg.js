@@ -1,5 +1,14 @@
-$(document).ready(function(){
-	
+$.ajax({
+				url:"/products/",
+				type:"get",
+				success:function(data){
+					for(var i=0;i<data.length;i++){
+				$(".newitem").append('<div class="newbox well well-lg">'+'<span class="sign glyphicon glyphicon-remove-sign pull-right">'+'</span>'+'<button class="pricebtn btn btn-primary pull-right"  type="button">'+data[i].p+'</button>'+'<h2>'+'<strong>'+data[i].item+'</strong>'+'</h2>'+'<p>'+'<strong>'+data[i].des+'</strong>'+'</p>'+'</div>');
+					}
+				}
+			})
+
+$(document).ready(function(){	
 	    $(".addbtn").on('click',function(event){
 			console.log($(".addbtn"));
 			event.preventDefault();
