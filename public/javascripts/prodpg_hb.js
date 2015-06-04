@@ -1,5 +1,5 @@
-
-		/*$( ".newitem" ).on( "click", ".glyphicon", function(){
+$(document).ready(function(){
+		$( ".newitem" ).on( "click", ".sign", function(){
 		var x =this;
 		console.log(x);
 	$.ajax({
@@ -12,7 +12,7 @@
 	}
 });
 });	
-	*/
+	
 $.ajax({
 		url:"/products/",
 		type:"get",
@@ -24,7 +24,6 @@ $.ajax({
 			}
 		})
 		
-$(document).ready(function(){
 		 $(".addbtn").on('click',function(event){
 			console.log($(".addbtn"));
 			event.preventDefault();
